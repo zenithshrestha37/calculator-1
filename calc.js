@@ -23,22 +23,31 @@ if (mathSymbol == '+'){
 	console.log(num1 + num2);
 }
 
-if (mathSymbol == '-'){
+else if (mathSymbol == '-'){
 	console.log(num1 - num2);
 }
 
-if (mathSymbol == '*'){
+else if (mathSymbol == '*'){
 	console.log(num1 * num2);
 }
-if (mathSymbol == '/'){
+else if (mathSymbol == '/'){
 	console.log(num1 / num2);
 }
-if (mathSymbol == '^'){
-	console.log(Math.sqrt(num1));
-	console.log(Math.sqrt(num2));
-	
+else if (mathSymbol == '^'){
+	console.log(Math.sqrt(num1), Math.sqrt(num2));	
 }
 
+else if (mathSymbol == '#'){
+	console.log(Math.pow(num1, 2), Math.pow(num2, 2));		
+}
+
+else if (mathSymbol == '@'){
+	console.log(Math.pow(num1, 3), Math.pow(num1, 3));
+}
+
+else if (mathSymbol == '%'){
+	console.log(num1 % num2);
+}
 
 	// This line closes the connection to the command line interface.
 	reader.close()
